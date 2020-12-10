@@ -1,0 +1,24 @@
+.navbar {
+  left: 0;
+  font-family: "Bellefair";
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 20px;
+  box-shadow: 0px 10px 10px rgba(5, 3, 3, 0.1);
+  background-color: #f9f9f9;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.stlist {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 5px 20px 5px;
+  line-height: 0;
+  text-transform: lowercase;
+  text-decoration: underline orange;
+}

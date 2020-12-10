@@ -1,0 +1,78 @@
+.footer {
+  width: 100%;
+  min-height: 250px;
+  background-color: #333;
+  margin-top: 50px;
+  font-family: "Bellefair";
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.copyright {
+  width: 100%;
+  padding-top: 10px;
+  min-height: 50px;
+  background-color: #222222;
+  text-align: center;
+  color: white;
+  text-transform: lowercase;
+  font-family: "Bleeding Cowboys";
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+
+.andCopy {
+  font-family: "Bellefair";
+  font-weight: 600;
+}
+
+.About {
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: inline-block;
+  overflow: hidden;
+  width: 700px;
+  max-width: 100%;
+  text-align: justify;
+}
+
+.Products {
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  text-align: justify;
+  text-transform: lowercase;
+  padding-left: 25px;
+}
+
+.headingAbout {
+  text-align: center;
+  width: 100%;
+  font-family: "Bleeding Cowboys";
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: white 1px solid;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  text-decoration: orange;
+}
+.Products li {
+  line-height: 25px;
+  text-decoration: underline orange;
+  font-size: 25px;
+  list-style: circle;
+}
