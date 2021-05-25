@@ -6,7 +6,7 @@ const NavBar = () => {
     <>
       <nav className="navbar visible-md visible-lg topnavbar menu menu--ama">
         <div className="centered">
-          <a className=" stlist" href="https://riungemaina.xyz">
+          <a className=" stlist" href="https://castynet.africa">
             Castynet
           </a>
           <a className="stlist" href="#idAsteroid">
