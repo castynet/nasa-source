@@ -45,15 +45,20 @@ class imageDay extends React.Component {
 
             <div className="detailsCard">
               <h1 className="title">
-                IMAGE OF THE DAY:
-                <br />
+                {this.state.data.media_type === "video" ? "VIDEO " : "IMAGE "}
+                OF THE DAY:
                 {this.state.data.title}
               </h1>
-              <p>NASA's image of the day: {this.state.data.date}</p>
+              <p>
+                <br />
+                NASA's{" "}
+                {this.state.data.media_type === "video" ? "video " : "image "}of
+                the day: {this.state.data.date}
+              </p>
               {!this.state.data.copyright ? (
-                <p>By Nasa</p>
+                <p>&copy; by Nasa</p>
               ) : (
-                <p>By: {this.state.data.copyright}</p>
+                <p>&copy; by {this.state.data.copyright}</p>
               )}
               <p>
                 <br />
