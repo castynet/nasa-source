@@ -46,8 +46,9 @@
   text-align: center;
   width: 100%;
   font-weight: 100;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-size: 25px;
+  text-transform: lowercase;
 }
 
 @keyframes anime-one {
