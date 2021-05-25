@@ -7,7 +7,7 @@ const outro = () => {
       <div className="footer" id="idAbout">
         <div className="About">
           <h1 className="headingAbout">About</h1>
-          <p className-="footerContent">
+          <p className="footerContent">
             The site displays data collected by NASA, the NASA Image of the Day
             and some recent Near Earth Objects. It's real-time data obtained
             through their open APIs. The site is built using ReactJS and hosted
@@ -22,7 +22,7 @@ const outro = () => {
         </div>
         <div className="Products">
           <h1 className="headingAbout">Links</h1>
-          <ul className-="footerContent">
+          <ul className="footerContent">
             <li>
               <a href="https://www.instagram.com/castynet_/?hl=en">
                 @castynet instagram
@@ -52,7 +52,7 @@ const outro = () => {
       </div>
       <div className="copyright">
         <p>
-          copyright <span className="andCopy">©</span> 2020 Castynet all rights
+          copyright <span className="andCopy">©</span> 2021 Castynet all rights
           reserved.
         </p>
       </div>
