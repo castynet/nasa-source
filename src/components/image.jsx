@@ -46,7 +46,7 @@ class imageDay extends React.Component {
             <div className="detailsCard">
               <h1 className="title">
                 {this.state.data.media_type === "video" ? "VIDEO " : "IMAGE "}
-                OF THE DAY:
+                OF THE DAY:&nbsp;
                 {this.state.data.title}
               </h1>
               <p>
