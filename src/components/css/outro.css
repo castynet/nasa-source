@@ -9,6 +9,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .copyright {
   width: 100%;
   padding-top: 10px;
@@ -17,7 +18,7 @@
   text-align: center;
   color: white;
   text-transform: lowercase;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-size: 15px;
 }
 
@@ -61,7 +62,7 @@
   border-bottom: white 1px solid;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   text-decoration: orange;
@@ -69,6 +70,6 @@ a{
 .Products li {
   line-height: 25px;
   text-decoration: underline orange;
-  font-size: 25px;
+  font-size: 20px;
   list-style: circle;
 }
