@@ -12,7 +12,6 @@ class imageDay extends React.Component {
       "https://api.nasa.gov/planetary/apod?api_key=bjuVUgfTLhIEoL8tiVwkom7V20gV7fquf0cNagKg";
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
     this.setState({ data: data });
   }
 
