@@ -23,7 +23,6 @@
   padding: 10px;
   padding-top: 30px;
   width: 100%;
-  font-family: monospace;
   color: limegreen;
   font-size: 15px;
   font-weight: 100;
@@ -46,7 +45,6 @@
 .title {
   text-align: center;
   width: 100%;
-  font-family: "Bleeding Cowboys";
   font-weight: 100;
   letter-spacing: 5px;
   font-size: 25px;
