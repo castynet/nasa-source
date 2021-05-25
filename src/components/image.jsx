@@ -1,10 +1,10 @@
 import React from "react";
 import "./css/image.css";
+import Embed from "./embed";
 
 class imageDay extends React.Component {
   state = {
-    pic: null,
-    copyright: null
+    data: null,
   };
 
   async componentDidMount() {
@@ -12,12 +12,14 @@ class imageDay extends React.Component {
       "https://api.nasa.gov/planetary/apod?api_key=bjuVUgfTLhIEoL8tiVwkom7V20gV7fquf0cNagKg";
     const response = await fetch(url);
     const data = await response.json();
-    this.setState({ pic: data, copyright: data.copyright });
+    console.log(data);
+    this.setState({ data: data });
   }
+
   render() {
     return (
       <>
-        {!this.state.pic ? (
+        {!this.state.data ? (
           <div className="loading">
             <div className="container">
               <p className="head-er">castynet@user-PC MINGW64 ~</p>
@@ -30,22 +32,29 @@ class imageDay extends React.Component {
           </div>
         ) : (
           <>
-            <img
-              className="imageCard"
-              src={this.state.pic.url}
-              alt="NASA's pic of the day"
-            />
+            <div className="imageCard">
+              {this.state.data.media_type === "video" ? (
+                <Embed url={this.state.data.url} />
+              ) : (
+                <img
+                  className="imageCard"
+                  src={this.state.data.url}
+                  alt="NASA's pic of the day"
+                />
+              )}
+            </div>
+
             <div className="detailsCard">
               <h1 className="title">
                 IMAGE OF THE DAY:
                 <br />
-                {this.state.pic.title}
+                {this.state.data.title}
               </h1>
-              <p>NASA's image of the day: {this.state.pic.date}</p>
-              {!this.state.copyright ? (
+              <p>NASA's image of the day: {this.state.data.date}</p>
+              {!this.state.data.copyright ? (
                 <p>By Nasa</p>
               ) : (
-                <p>By: {this.state.copyright}</p>
+                <p>By: {this.state.data.copyright}</p>
               )}
               <p>
                 <br />
