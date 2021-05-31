@@ -36,7 +36,6 @@ class imageDay extends React.Component {
                 <Embed url={this.state.data.url} />
               ) : (
                 <img
-                  className="imageCard"
                   src={this.state.data.url}
                   alt="NASA's pic of the day"
                 />
